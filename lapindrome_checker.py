@@ -8,6 +8,7 @@ for i in range(t):
     d2 = {}
     truth = 0
     lens = len(s) // 2
+    
     if len(s) % 2 == 0:
         s1 = s[:lens] #First half of the string.
         s2 = s[lens:] #Second half of the string.
