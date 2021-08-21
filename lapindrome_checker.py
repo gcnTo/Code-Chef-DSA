@@ -10,10 +10,10 @@ for i in range(t):
     lens = len(s) // 2
     if len(s) % 2 == 0:
         s1 = s[:lens] #First half of the string.
-        s2 = s[lens:] #Secon half of the string.
+        s2 = s[lens:] #Second half of the string.
     elif len(s) % 2 == 1:
         s1 = s[:lens] #First half of the string.
-        s2 = s[lens+1:] #Secon half of the string.
+        s2 = s[lens+1:] #Second half of the string.
     
     for j in range(len(s1)):
         if s1[j] in d1:
