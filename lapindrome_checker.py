@@ -16,19 +16,22 @@ for i in range(t):
         s1 = s[:lens] #First half of the string.
         s2 = s[lens+1:] #Second half of the string.
     
-    for j in range(len(s1)):
+    #Populates dict 1 to record how many times a letter is in the string s1.
+    for j in range(len(s1)): 
         if s1[j] in d1:
             d1[s1[j]] += 1 
         else:
             d1[s1[j]] = 1
     
-    for k in range(len(s2)):
+    #Populates dict 2 to record how many times a letter is in the string s2.
+    for k in range(len(s2)): 
         if s2[k] in d2:
             d2[s2[k]] += 1
         else:
             d2[s2[k]] = 1
-    
-    for item in d1:
+            
+    #Compares dict 1 and dict 2 to see if the all contain the same letters the same number of times.
+    for item in d1: 
         if item in d2:
             if d1[item] == d2[item]:
                 truth += 1
